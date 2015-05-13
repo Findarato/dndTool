@@ -1,1 +1,24 @@
-{}
+[
+  { 
+  	"name":"Acid Spash",
+    "level":0,
+    "Casting Time":"1 Action",
+    "source":"PHB",
+    "range":"60 feet",
+    "components":"V S",
+    "duration":"Instantaneous",
+    "description":"",
+    "classes":["Sorcerer","Wizard"]
+  },
+  {
+    "name":"Blade Ward",
+    "level":0,
+    "casting Time":"1 Action",
+    "source":"PHB",
+    "range":"Self",
+    "components":"V S",
+    "duration":"1 Round",
+    "description":"",
+    "classes":["Bard","Sorcerer","Warlock","Wizard"]
+  }
+]
