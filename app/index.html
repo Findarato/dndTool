@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>poly foo</title>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -42,25 +43,23 @@
       </core-header-panel>
 
       <!-- Main -->
-      <core-header-panel main>
+      <core-header-panel main mode="waterfall-tall">
 
         <!-- Main Toolbar -->
         <core-toolbar class="animate tall">
           <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
-          <span class="bottom">{{appName}}</span>
+          <span class="middle indent">{{appName}}</span>
           <span flex></span>
           <paper-icon-button icon="search"></paper-icon-button>
         </core-toolbar>
 
         <!-- Main Content -->
         <div class="hero-unit">
-          <yo-greeting></yo-greeting>
-          <p>You now have</p>
-          <yo-list></yo-list>
+
         </div>
       </core-header-panel>
     </core-drawer-panel>
-
+    <paper-fab icon="add" id="add" class="mainAdd"></paper-fab>
   </template>
 
   <!-- build:js scripts/app.js -->

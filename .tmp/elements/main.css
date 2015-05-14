@@ -1,13 +1,3 @@
-*{
-  -webkit-user-select: none; /* Chrome/Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+ */
-
-/* Rules below not implemented in browsers yet */
--o-user-select: none;
-user-select: none;
-
-}
 body {
   background: #fafafa;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -44,13 +34,8 @@ body {
 
 core-toolbar {
   color: #FAFAFA;
-  background: #607d8b url("../images/DndFanSiteKit/ToDKeyArt3.jpb");
+  background-color: #607d8b;
+  background-image: url("images/DndFanSiteKit/ToDKeyArt3.jpb");
   background-position: center;
   background-size: cover;
-}
-.mainAdd{
-  position:absolute;
-  bottom:2em;
-  right:2em;
-  
 }
