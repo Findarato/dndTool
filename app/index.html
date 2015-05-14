@@ -27,16 +27,16 @@
     <core-drawer-panel>
 
       <!-- Drawer -->
-      <core-header-panel drawer>
+      <core-header-panel drawer mode="scroll">
 
         <!-- Drawer Toolbar -->
-        <core-toolbar>Menu</core-toolbar>
+        <core-toolbar class="tall">Player</core-toolbar>
 
         <!-- Drawer Content -->
         <core-menu selected="0">
-          <core-item label="Yo"></core-item>
-          <core-item label="Polymer"></core-item>
-          <core-item label="App"></core-item>
+          <core-item label="Characters"></core-item>
+          <core-item label="Spells"></core-item>
+          <core-item label="Tools"></core-item>
         </core-menu>
 
       </core-header-panel>
@@ -45,9 +45,11 @@
       <core-header-panel main>
 
         <!-- Main Toolbar -->
-        <core-toolbar>
+        <core-toolbar class="animate tall">
           <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
-          <span>{{appName}}</span>
+          <span class="bottom">{{appName}}</span>
+          <span flex></span>
+          <paper-icon-button icon="search"></paper-icon-button>
         </core-toolbar>
 
         <!-- Main Content -->
