@@ -48,6 +48,8 @@ core-toolbar {
   background: #607d8b url("../images/DndFanSiteKit/ToDKeyArt3.jpb");
   background-position: center;
   background-size: cover;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
 }
 
 .mainAdd {

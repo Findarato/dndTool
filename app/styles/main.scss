@@ -1,3 +1,5 @@
+@import 'palette.sass';
+
 *{
   -webkit-user-select: none; /* Chrome/Safari */        
 -moz-user-select: none; /* Firefox */
@@ -10,7 +12,7 @@ user-select: none;
 }
 body {
   background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -44,14 +46,29 @@ body {
 
 core-toolbar {
   color: #FAFAFA;
-  background: #607d8b url("../images/DndFanSiteKit/ToDKeyArt3.jpb");
+  background: #607d8b;
   background-position: center;
   background-size: cover;
   transform: translate3d(0px, 0px, 0px);
+}
+core-toolbar.tall{
+  background:green url("../images/DnDFanSiteKit/ToDKeyArt3.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .mainAdd{
   position:absolute;
   bottom:2em;
   right:2em;
-  
+}
+.versionInfo{
+
+}
+.characterCard{
+  border:1px solid $primary-color-light;
+  height:300px;
+  width:300px;
+  &:hover{
+    border-color:$accent-color;
+  }
 }
