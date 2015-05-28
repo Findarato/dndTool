@@ -28,37 +28,37 @@
 <body unresolved fullbleed layout vertical>
   <template is="auto-binding" id="app">
 
-    <core-drawer-panel>
+    <paper-drawer-panel>
 
       <!-- Drawer -->
-      <core-header-panel drawer mode="scroll">
+      <paper-header-panel drawer mode="scroll">
         
         <!-- Drawer Toolbar -->
-        <core-toolbar class="tall">
-          <core-item class="bottom">Player</core-item>
-        </core-toolbar>
+        <paper-toolbar class="tall">
+          <paper-item class="bottom">Player</paper-item>
+        </paper-toolbar>
         <!-- Drawer Content -->
         <div vertical layout start>
-          <core-menu selected="0">
-            <core-item label="Characters" icon="account-box"></core-item>
-            <core-item label="Spells" icon="book"></core-item>
-            <core-item label="Tools" icon="settings"></core-item>
-          </core-menu>
+          <paper-menu selected="0">
+            <paper-item label="Characters" icon="account-box"></paper-item>
+            <paper-item label="Spells" icon="book"></paper-item>
+            <paper-item label="Tools" icon="settings"></paper-item>
+          </paper-menu>
           <div flex></div>
-          <core-item class="versionInfo">Version {{version}}</core-item>  
+          <paper-item class="versionInfo">Version {{version}}</paper-item>  
         </div>
         
-      </core-header-panel>
+      </paper-header-panel>
 
       <!-- Main -->
-      <core-header-panel main mode="waterfall">
+      <paper-header-panel main mode="waterfall">
         <!-- Main Toolbar -->
-        <core-toolbar class="">
-          <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
+        <paper-toolbar class="">
+          <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
           <span class="middle indent">{{appName}}</span>
           <span flex></span>
           <paper-icon-button icon="search"></paper-icon-button>
-        </core-toolbar>
+        </paper-toolbar>
 
         <!-- Main Content -->
         <div class="hero-unit">
@@ -78,8 +78,8 @@
           
         </div>
         
-      </core-header-panel>
-    </core-drawer-panel>
+      </paper-header-panel>
+    </paper-drawer-panel>
     <paper-fab icon="add" id="add" class="mainAdd"></paper-fab>
   </template>
 
