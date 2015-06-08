@@ -1,3 +1,6 @@
 test/temp
 .sass-cache
 .tmp
+Vagrantfile
+.vagrant
+.git
